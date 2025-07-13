@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Contact Us - Quiz Of The Day</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Contact Quiz Of The Day team. Get in touch with us for questions, feedback, or suggestions about our daily general knowledge quiz platform.">
+    <link rel="canonical" href="https://quizoftheday.net/contact.html">
+    <meta property="og:title" content="Contact Us - Quiz Of The Day">
+    <meta property="og:description" content="Contact Quiz Of The Day team. Get in touch with us for questions, feedback, or suggestions about our daily general knowledge quiz platform.">
+    <meta property="og:url" content="https://quizoftheday.net/contact.html">
+    <meta property="og:type" content="website">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <!-- Google Fonts: Inter -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <nav class="navbar navbar-default navbar-fixed-top">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="index.html">Quiz Of The Day</a>
+            </div>
+            <div id="navbar" class="navbar-collapse collapse">
+                <ul class="navbar-nav navbar-right">
+                    <li><a href="index.html">New Quiz</a></li>
+                    <li><a href="#" onclick="showArchive()">Archive</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="privacy.html">Privacy Policy</a></li>
+                    <li class="active"><a href="contact.html">Contact Us</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <div class="container mainContent" style="margin-top: 70px;">
+        <h2>Contact Us</h2>
+        <form id="contactForm" onsubmit="submitContactForm(event)">
+            <div class="form-group">
+                <label for="contactName">Name</label>
+                <input type="text" class="form-control" id="contactName" required>
+            </div>
+            <div class="form-group">
+                <label for="contactEmail">Email</label>
+                <input type="email" class="form-control" id="contactEmail" required>
+            </div>
+            <div class="form-group">
+                <label for="contactMessage">Message</label>
+                <textarea class="form-control" id="contactMessage" rows="3" required></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary">Send</button>
+        </form>
+        <div id="contactSuccess" style="display:none; margin-top:10px;" class="alert alert-success">Thank you for contacting us!</div>
+    </div>
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2024 Quiz Of The Day. All rights reserved.</p>
+        </div>
+    </footer>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js" defer></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js" defer></script>
+    <script src="script.js" defer></script>
+</body>
+</html>
